@@ -1,0 +1,38 @@
+---
+id: "monitor-fantasma-texturas"
+hide_title: false
+hide_table_of_contents: true
+sidebar_position: 1
+sidebar_label: "Monitor Fantasma"
+---
+
+import TerminalText from '@site/src/components/TerminalText';
+
+# TEXTURAS: MONITOR FANTASMA
+
+<TerminalText 
+    text=">_ HARDWARE_EMULATION: CRT_MONITOR.EXE" 
+    color="blue" 
+    speed={60} 
+/>
+
+<p className="lead-text">
+  **Tipo: Digital / Emisiva.** Una simulación pura de hardware retro. Literalmente la estética pesada 
+  de las gloriosas pantallas de tubo de cristal (CRT) de los años 90s fusionada con lúgubres terminales verdes de hackeo.
+</p>
+
+---
+
+### 📺 Tratamiento Visual (`Scanlines()`)
+Visualmente es un bloque de líneas horizontales densas extremadamente finas y fuertemente intercaladas (las llamadas famosamente _Scanline_). Están casadas para siempre con un ligero y difuminado resplandor exterior lumínico (Efecto Bloom de pantalla vieja brillante) y a veces sufre de dolorosa aberración cromática pesada (fuerte desfase óptico forzado de los 3 colores primarios rojo, verde y azul del pixel base) exclusivamente en los bordillos o rincones de la imagen, simulando que el haz de electrones de la pantalla falló terriblemente en golpear el fósforo del cristal físico.
+
+### 🎨 Parámetros de Mezcla Gráfica (`mix-blend-mode`)
+En cualquier software de diseño (Figma / Photoshop) o renderizado CSS forzado, este recurso debe colocarse siempre por encima de tus capas:
+- **Modo de Fusión Opcional 1:** `Overlay` (Para contraste crudo y dramático).
+- **Modo de Fusión Opcional 2:** `Soft Light` (Para ambientes limpios o fotos serias).
+
+### 📍 Puntos de Montaje Aprobados (Deploy)
+¿Dónde implementar físicamente esta distorsión?
+- **Sobre Fotografías de Alumnos:** Transformándolas para que parezca que están "Siendo escaneados en 3D" o inmersos profundamente "adentro de la simulación del sistema maestro".
+- **Miniaturas Magnéticas (YouTube):** Un contorno general muy bajo al `10%` atrae mucho la vista (_Clickability_) en video de tutoriales de plataformas de contenido online masivo.
+- Fondos de masterclasses presentadas, **siempre ahogadas en una brutal opacidad general bajísima (`5%`)** para nunca marear inútilmente con las líneas horizontales a quienes ven el proyector en vivo una hora seguida.

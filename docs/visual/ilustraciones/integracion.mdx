@@ -1,0 +1,55 @@
+---
+id: "ilustraciones-integracion"
+hide_title: false
+hide_table_of_contents: true
+sidebar_position: 5
+sidebar_label: "Post-Procesado (The Mix)"
+---
+
+import TerminalText from '@site/src/components/TerminalText';
+
+# INTEGRACIÓN & POST-PROCESADO
+
+<TerminalText 
+    text=">_ APPLYING: CODE_ME_REMIX.SH" 
+    color="pink" 
+    speed={60} 
+/>
+
+<p className="lead-text">
+  **The Final Render.** Una regla de hierro: Absolutamente cualquier ilustración cruda (`RAW asset`) 
+  debe pasar por nuestro **script visual de Post-Procesado** antes de compilarse para publicación.
+</p>
+
+---
+
+### 🔮 El Script "Neon Glow" (`box-shadow`)
+Para asegurar la cohesión estética de los iconos lineales y la rudeza de los elementos pixelados en el Modo Voxel, siempre se les debe inyectar un agresivo **resplandor exterior**. Este efecto óptico simula con precisión la radiación de una pantalla CRT de los ochentas o la quema de un tubo de luz neón físico.
+
+Se aplica un doble nivel cromático flotante (`drop-shadow`):
+
+```css
+/* -- THE NEON GLOW PROTOCOL -- */
+
+.asset-glow-cyan {
+  /* Filtro base para elementos estructurales y Tech */
+  filter: drop-shadow(0 0 5px var(--cm-cyan-electrico)) 
+          drop-shadow(0 0 15px var(--cm-cyan-electrico));
+}
+
+.asset-glow-pink {
+  /* Filtro agresivo para elementos puros de acción/alerta (CTAs) */
+  filter: drop-shadow(0 0 5px var(--cm-rosa-ajolote)) 
+          drop-shadow(0 0 15px var(--cm-rosa-ajolote));
+}
+```
+
+### 📺 Aberración Cromática (`RGB Split`)
+Para portadas estelares o anuncios de performance en Meta, los gráficos principales (`Hero Mode`) sufren una levísima separación de sus canales Rojo, Verde y Azul (`RGB Split`) en los bordes. Esto le grita al subconsciente del espectador que la imagen no es un dibujo clásico impreso, sino un _Glitch digital_ que rompió la interfaz de la realidad.
+
+<TerminalText 
+    text="_ STATUS: POST_PROCESSING_COMPLETE" 
+    color="green" 
+    speed={40} 
+    delay={1200}
+/>

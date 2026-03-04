@@ -1,0 +1,14 @@
+{
+    "position": 2,
+    "label": "Colores",
+    "key": "colores",
+    "collapsible": true,
+    "collapsed": true,
+    "link": {
+        "type": "doc",
+        "id": "colores-index"
+    },
+    "customProps": {
+        "description": "Conoce las paletas de colores que utilizamos en Code Me."
+    }
+}

@@ -1,0 +1,34 @@
+---
+id: "web-estilo-diseno"
+hide_title: false
+hide_table_of_contents: true
+sidebar_position: 3
+sidebar_label: "Semanntica Web (UI)"
+---
+
+import TerminalText from '@site/src/components/TerminalText';
+
+# WEB: LA TERMINAL VIVA
+
+<TerminalText 
+    text=">_ LOCALHOST:3000 // RENDER_APP()" 
+    color="blue" 
+    speed={60} 
+/>
+
+<p className="lead-text">
+  **El Entorno Virtual.** La interfaz gráfica general (UI) de <strong>CODE ME</strong> no es una web informativa muerta; 
+  debe reaccionar constantemente al scroll del usuario, interactuando de vuelta como si fuera tu propio sistema operativo.
+</p>
+
+---
+
+### 🎛️ Micro-Interacciones Reactivas (`:hover`)
+Los elementos de estado no solo mutan llanamente de color al recibir la interacción (`hover/focus/active`). Para la inmersión técnica se deben implementar ligeras opacidades cambiantes, transformaciones de tamaño sutiles (`scale(1.02)`) o flashes rápidos ("flicker") imitando una pantalla CRT vieja o los tubos de fósforo de los primeros monitores.
+Los botones de acción principal (CTAs) emiten un _glow_ exterior (`box-shadow`) estilo Cyberpunk.
+
+### 🖱️ Cursor Dinámico (Custom Pointers)
+Cuestión fundamental de inmersión: Un _custom cursor_ cambia las reglas. Para `Code-Me`, el puntero del mouse pierde formato de "flecha de Windows", y en la landing page puede transformarse libre y temporalmente en una "Mira de escaneo vectorial", un punto de enfoque de crosshairs, o un poderoso símbolo de consola interactivo (`>_`) que parpadee constantemente.
+
+### 📜 Scrollytelling & Parallax (`useEffect()`)
+Evitamos paredes llanas masivas de texto flotando en el vacío. A medida que el usuario realiza scroll down en la página base, aparecen sutiles líneas de código verdosas o blancas muy transparentes en los bordes laterales y el background, actuando visualmente para simular que la web misma se está "compilando" justo al borde la vista. El texto estático en realidad da la sensación de estarse generando _On the Fly_ desde el servidor.

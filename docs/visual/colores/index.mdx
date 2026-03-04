@@ -1,0 +1,71 @@
+---
+id: "colores-index"
+title: "Sistema de Colores"
+sidebar_label: "Introducción"
+sidebar_position: 1
+hide_table_of_contents: true
+---
+
+import TerminalText from '@site/src/components/TerminalText';
+
+# SISTEMA CLROAMATICO
+
+<TerminalText 
+    text=">_ BOOTING: LIGHT_AND_INK_PROFILES.SH" 
+    color="pink" 
+    speed={60} 
+/>
+
+<p className="lead-text">
+  **El Voltaje Visual.** Los colores de <strong>CODE ME</strong> no son simples selecciones de "Qué se ve bonito en la rueda del pantone"; 
+  son verdaderos voltajes digitales crudos diseñados científicamente para sangrar brillo sobre el <i>Dark Mode</i> 
+  y permanecer legibles en cualquier entorno de desarrollo bajo presión.
+</p>
+
+---
+
+<div className="grid-container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', margin: '2rem 0' }}>
+  {/* RGB */}
+  <div className="style-card" style={{ background: 'rgba(15, 23, 42, 0.5)', border: '1px solid var(--cm-rosa-ajolote)', padding: '1.5rem', borderRadius: '4px' }}>
+    <div className="card-header" style={{ borderBottom: '1px solid rgba(255, 42, 109, 0.2)', paddingBottom: '1rem', marginBottom: '1rem' }}>
+      <h3 style={{ margin: 0, color: 'var(--cm-rosa-ajolote)', fontFamily: 'var(--cm-font-mono)' }}>>_ REGLAS RGB (PANTALLA)</h3>
+    </div>
+    <div className="card-body">
+      <p style={{ lineHeight: 1.6 }}>Nuestra brutal paleta de colores luz primaria (`Rosa Ajolote`, `Verde Terminal`, `Cyan Eléctrico`, `Obsidiana`).</p>
+      <a href="./rgb" className="button button--primary button--outline button--sm" style={{borderColor: 'var(--cm-rosa-ajolote)', color: 'var(--cm-rosa-ajolote)'}}>Cargar Módulo RGB</a>
+    </div>
+  </div>
+
+  {/* CMYK */}
+  <div className="style-card" style={{ background: 'rgba(15, 23, 42, 0.5)', border: '1px solid var(--cm-cyan-electrico)', padding: '1.5rem', borderRadius: '4px' }}>
+    <div className="card-header" style={{ borderBottom: '1px solid rgba(0, 240, 255, 0.2)', paddingBottom: '1rem', marginBottom: '1rem' }}>
+      <h3 style={{ margin: 0, color: 'var(--cm-cyan-electrico)', fontFamily: 'var(--cm-font-mono)' }}>>_ REGLAS CMYK (IMPRENTA)</h3>
+    </div>
+    <div className="card-body">
+      <p style={{ lineHeight: 1.6 }}>Llamadas a `Parches` químicos para impresión física, asegurando que el Neón sobreviva al pasarlo a Offset y Plotters de Lona.</p>
+      <a href="./cmyk" className="button button--primary button--outline button--sm" style={{borderColor: 'var(--cm-cyan-electrico)', color: 'var(--cm-cyan-electrico)'}}>Cargar Módulo CMYK</a>
+    </div>
+  </div>
+
+  {/* Contraste */}
+  <div className="style-card" style={{ background: 'rgba(15, 23, 42, 0.5)', border: '1px solid var(--cm-verde-terminal)', padding: '1.5rem', borderRadius: '4px' }}>
+    <div className="card-header" style={{ borderBottom: '1px solid rgba(5, 255, 0, 0.2)', paddingBottom: '1rem', marginBottom: '1rem' }}>
+      <h3 style={{ margin: 0, color: 'var(--cm-verde-terminal)', fontFamily: 'var(--cm-font-mono)' }}>>_ CONTRASTE & UX_CHECKS</h3>
+    </div>
+    <div className="card-body">
+      <p style={{ lineHeight: 1.6 }}>Exhaustiva jerarquía de legibilidad bajo el estándar internacional `WCAG`, matrices de combinación autorizadas y Accesibilidad Tech.</p>
+      <a href="./contraste" className="button button--primary button--outline button--sm" style={{borderColor: 'var(--cm-verde-terminal)', color: 'var(--cm-verde-terminal)'}}>Compilar Reglas UX</a>
+    </div>
+  </div>
+
+  {/* Salud */}
+  <div className="style-card" style={{ background: 'rgba(15, 23, 42, 0.5)', border: '1px solid var(--cm-blanco-consola)', padding: '1.5rem', borderRadius: '4px' }}>
+    <div className="card-header" style={{ borderBottom: '1px solid rgba(248, 250, 252, 0.2)', paddingBottom: '1rem', marginBottom: '1rem' }}>
+      <h3 style={{ margin: 0, color: 'var(--cm-blanco-consola)', fontFamily: 'var(--cm-font-mono)' }}>>_ ERGONOMÍA VISUAL</h3>
+    </div>
+    <div className="card-body">
+      <p style={{ lineHeight: 1.6 }}>Salud del usuario puro. Directrices fisiológicas aplicadas para prevención brutal de fatiga ocular en lectura de código prolongada.</p>
+      <a href="./ergonomia" className="button button--primary button--outline button--sm" style={{borderColor: 'var(--cm-blanco-consola)', color: 'var(--cm-blanco-consola)'}}>Consultar Protocolos</a>
+    </div>
+  </div>
+</div>

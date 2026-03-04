@@ -1,0 +1,14 @@
+{
+  "position": 8,
+  "label": "Estilo de Diseño",
+  "key": "estilo-diseno",
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "estilo-diseno-index"
+  },
+  "customProps": {
+    "description": "Conoce los estilos de diseño de Code Me."
+  }
+}

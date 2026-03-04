@@ -1,0 +1,51 @@
+---
+id: "patrones-reticula-maestra"
+hide_title: false
+hide_table_of_contents: true
+sidebar_position: 1
+sidebar_label: "Retícula Maestra"
+---
+
+import TerminalText from '@site/src/components/TerminalText';
+import ColorPalette from '@site/src/components/ColorPalette';
+import ColorCard from '@site/src/components/ColorCard';
+
+# PATRONES: RETÍCULA MAESTRA
+
+<TerminalText 
+    text=">_ GRID_SYSTEM: INITIALIZED" 
+    color="blue" 
+    speed={60} 
+/>
+
+<p className="lead-text">
+  **The Under-Layer.** La retícula maestra es el patrón que otorga estructura pura y orden absoluto al caos cibernético. 
+  Conceptualmente simboliza el clásico "cuaderno de matemáticas" traído bruscamente al año 2077.
+</p>
+
+---
+
+### 📏 Comportamiento Visual (`Z-index: 0`)
+- **Nivel de Ruido:** Extremadamente bajo (Sutil).
+- **Tratamiento Gráfico:** Una cuadrícula geométrica (_grid_) perpetua y constante, dibujada con líneas ultrafinas (1px o 0.5px). 
+
+### ⚙️ Configuración del Sistema (Specs)
+
+**Color de Lógica:** No debe robar atención.
+<ColorPalette columns={2}>
+    <ColorCard name="Blanco Consola" color="#F8FAFC" opacity={0.1} variant="hover" />
+    <ColorCard name="Cyan Eléctrico" color="#00F0FF" opacity={0.1} variant="hover" />
+</ColorPalette>
+
+**Opacidad Global:** Entre el `5%` y el `10%` máximo. Si destaca más que el texto, es un bug de diseño.
+
+**Fondo Nativo (`background-color`):**
+<div style={{maxWidth: '300px', marginBottom: '2rem'}}>
+    <ColorCard name="Obsidiana Digital" color="#0F172A" opacity={0.1} variant="hover" />
+</div>
+
+### 📍 Puntos de Montaje Aprobados (Deploy)
+¿Dónde implementar este patrón repetitivo?
+- Fondos bases principales y globales para presentaciones (Slides).
+- Hojas de trabajo impresas entregables en salón (emulando "Papel Milimétrico").
+- En el sitio web (`body { background-image: ... }`).

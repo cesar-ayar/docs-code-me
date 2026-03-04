@@ -1,0 +1,14 @@
+{
+  "position": 1,
+  "label": "Logotipo",
+  "key": "logotipo",
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "logotipo"
+  },
+  "customProps": {
+    "description": "Conoce los usos del logotipo."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "position": 4,
+  "label": "Lenguaje y tono de voz",
+  "key": "lenguaje-y-tono-de-voz",
+  "collapsible": true,
+  "collapsed": true,
+    "link": {
+        "type": "doc",
+        "id": "lenguaje-y-tono-de-voz-index"
+    },
+  "customProps": {
+    "description": "Conoce los activos de lenguaje y tono de voz de Code Me."
+  }
+}

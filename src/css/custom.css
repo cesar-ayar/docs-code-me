@@ -1,0 +1,283 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Montserrat:wght@400;600;700;800&family=Saira:wght@400;600;700;800&display=swap');
+
+:root {
+  /* Brand Tokens */
+  --cm-obsidiana: #0F172A;
+  --cm-blanco-consola: #F8FAFC;
+  --cm-rosa-ajolote: #FF2A6D;
+  --cm-cyan-electrico: #00F0FF;
+  --cm-verde-terminal: #05FF00;
+
+  --cm-font-principal: 'Saira', sans-serif;
+  --cm-font-secundaria: 'Montserrat', sans-serif;
+  --cm-font-mono: 'JetBrains Mono', monospace;
+
+  /* Global Infima Variables override */
+  --ifm-color-primary: #FF2A6D;
+  --ifm-color-primary-dark: #e61958;
+  --ifm-color-primary-darker: #cc154e;
+  --ifm-color-primary-darkest: #990f3b;
+  --ifm-color-primary-light: #ff4d84;
+  --ifm-color-primary-lighter: #ff6696;
+  --ifm-color-primary-lightest: #ff99ba;
+
+  --ifm-font-family-base: var(--cm-font-secundaria);
+  --ifm-heading-font-family: var(--cm-font-principal);
+  --ifm-font-family-monospace: var(--cm-font-mono);
+
+  --ifm-heading-font-weight: 800;
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --brand-pink: var(--cm-rosa-ajolote);
+  --brand-cyan: var(--cm-cyan-electrico);
+  --glass-bg: rgba(15, 23, 42, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Force dark mode and specific brand coloring */
+[data-theme='dark'] {
+  --ifm-color-primary: var(--cm-rosa-ajolote);
+  --ifm-background-color: var(--cm-obsidiana);
+  --ifm-heading-color: var(--cm-blanco-consola);
+  --ifm-font-color-base: #e2e8f0;
+  /* slate-200 para contraste WCAG ++ en lectura */
+  --ifm-menu-color: #94a3b8;
+  --ifm-menu-color-active: var(--cm-cyan-electrico);
+  --ifm-menu-color-background-active: rgba(0, 240, 255, 0.1);
+  --ifm-menu-color-background-hover: rgba(255, 255, 255, 0.05);
+  --ifm-link-color: var(--cm-cyan-electrico);
+
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.05);
+}
+
+/* Code Me Header styling (Jerarquía de Tipografías) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ifm-heading-font-family);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--cm-blanco-consola);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--cm-cyan-electrico);
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--cm-rosa-ajolote);
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--cm-verde-terminal);
+}
+
+h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--cm-blanco-consola);
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: var(--cm-font-mono);
+  color: var(--cm-rosa-ajolote);
+}
+
+p,
+li,
+span {
+  font-family: var(--ifm-font-family-base);
+}
+
+::selection {
+  background-color: rgba(0, 240, 255, 0.3);
+  color: var(--cm-blanco-consola);
+}
+
+/* Custom UI Components for Brand Guidelines */
+
+.custom-container {
+  padding: 1.5rem;
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.lead-text {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.style-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.style-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--brand-cyan);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card-header {
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.03);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.spec-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.spec-label {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.spec-value {
+  font-size: 1.1rem;
+  color: var(--brand-cyan);
+  font-weight: 800;
+}
+
+.spec-value small {
+  font-size: 0.7rem;
+  color: #64748b;
+  font-weight: 400;
+  margin-left: 0.25rem;
+}
+
+/* Custom Error Button for Brand Docs */
+.button--danger-custom {
+  color: #ff4d4d !important;
+  border-color: #ff4d4d !important;
+  transition: all 0.3s ease;
+}
+
+.button--danger-custom:hover {
+  background: #ff4d4d !important;
+  color: #fff !important;
+  box-shadow: 0 0 15px rgba(255, 77, 77, 0.4);
+}
+
+/* =======================================================
+   REGLAS DE ACCESIBILIDAD Y CONSTRASTE (WCAG) CODE ME
+   ======================================================= */
+
+/* 1. Regla de la Sangre Negra: Textos oscuros obligatorios 
+   sobre fondos vivos (Botones y Badges) */
+.button--primary:not(.button--outline),
+.badge--primary,
+.button--success:not(.button--outline),
+.badge--success,
+.button--info:not(.button--outline),
+.badge--info {
+  color: var(--cm-obsidiana) !important;
+  font-weight: 800;
+  /* Asegurar la legibilidad interna */
+}
+
+/* Outline hover state fixes para mantener el contraste */
+.button--primary.button--outline:hover {
+  color: var(--cm-obsidiana) !important;
+  background-color: var(--cm-rosa-ajolote) !important;
+}
+
+/* 2. Accesibilidad de Navegación por Teclado (Focus) */
+:focus-visible {
+  outline: 2px solid var(--cm-cyan-electrico) !important;
+  outline-offset: 4px !important;
+  border-radius: 2px;
+}
+
+/* 3. Links de Contenido A11Y */
+.markdown a {
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 240, 255, 0.3);
+  text-underline-offset: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.markdown a:hover {
+  text-decoration-color: var(--cm-cyan-electrico);
+  background: rgba(0, 240, 255, 0.1);
+}
+
+/* 4. Alertas (Admonitions) Contraste Fix */
+.theme-admonition {
+  background: rgba(15, 23, 42, 0.6) !important;
+  border: 1px solid var(--glass-border) !important;
+  border-left-width: 4px !important;
+  backdrop-filter: blur(10px);
+}
+
+/* Fix warning/danger colors specific */
+.theme-admonition-warning {
+  border-left-color: #FFB800 !important;
+}
+
+.theme-admonition-danger {
+  border-left-color: var(--cm-rosa-ajolote) !important;
+}

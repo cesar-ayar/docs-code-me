@@ -1,0 +1,14 @@
+{
+  "position": 1,
+  "label": "Identidad Corporativa",
+  "key": "identidad-corporativa",
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "doc",
+    "id": "identidad-corporativa-index"
+  },
+  "customProps": {
+    "description": "Conoce los principios que nos definen."
+  }
+}

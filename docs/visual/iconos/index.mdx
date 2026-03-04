@@ -1,0 +1,63 @@
+---
+id: "iconos-index"
+title: "Sistema de Iconos"
+sidebar_label: "Introducción"
+sidebar_position: 1
+hide_table_of_contents: true
+---
+
+import TerminalText from '@site/src/components/TerminalText';
+
+# ARQUITECTURA DE ICONOS
+
+<TerminalText 
+    text=">_ BOOTING: SYMBOLIC_SYSTEM.SVG" 
+    color="pink" 
+    speed={60} 
+/>
+
+<p className="lead-text">
+  **The UX Language.** En <strong>CODE ME</strong> no dibujamos tiernos vectores decorativos abstractos; 
+  programamos exactas y eficientes *funciones visuales asíncronas* en nuestra interfaz (`UI`). 
+  Exigimos extrema y cruel simplicidad lineal minimalista, precisión técnica universal y coherencia lógica de software para guiar masivamente al ojo del usuario a una brutal conversión.
+</p>
+
+---
+
+<div className="grid-container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', margin: '2rem 0' }}>
+
+  {/* Estilos */}
+  <div className="style-card" style={{ background: 'rgba(15, 23, 42, 0.5)', border: '1px solid var(--cm-verde-terminal)', padding: '1.5rem', borderRadius: '4px' }}>
+    <div className="card-header" style={{ borderBottom: '1px solid rgba(5, 255, 0, 0.2)', paddingBottom: '1rem', marginBottom: '1rem' }}>
+      <h3 style={{ margin: 0, color: 'var(--cm-verde-terminal)', fontFamily: 'var(--cm-font-mono)' }}>>_ REGLAS DE UI DESIGN</h3>
+    </div>
+    <div className="card-body">
+      <p style={{ lineHeight: 1.6 }}>Leyes inflexibles de diseño general vectorial: Retículas de mapeado, grosores exactos del `Stroke` lineal y el indispensable `Padding` paramétrico de nuestra iconografía.</p>
+      <a href="./implementacion" className="button button--primary button--outline button--sm" style={{borderColor: 'var(--cm-verde-terminal)', color: 'var(--cm-verde-terminal)'}}>Ver Framework Lineal</a>
+    </div>
+  </div>
+
+  {/* Diccionario */}
+  <div className="style-card" style={{ background: 'rgba(15, 23, 42, 0.5)', border: '1px solid var(--cm-cyan-electrico)', padding: '1.5rem', borderRadius: '4px' }}>
+    <div className="card-header" style={{ borderBottom: '1px solid rgba(0, 240, 255, 0.2)', paddingBottom: '1rem', marginBottom: '1rem' }}>
+      <h3 style={{ margin: 0, color: 'var(--cm-cyan-electrico)', fontFamily: 'var(--cm-font-mono)' }}>>_ DICCIONARIO BASE (TOKENS)</h3>
+    </div>
+    <div className="card-body">
+      <p style={{ lineHeight: 1.6 }}>El crudo glosario universalizado de variables de símbolos (`Strings`) con todo el poderoso peso y sólido significado semántico detrás de cada elemento.</p>
+      <a href="./diccionario" className="button button--primary button--outline button--sm" style={{borderColor: 'var(--cm-cyan-electrico)', color: 'var(--cm-cyan-electrico)'}}>Consultar Base de Datos</a>
+    </div>
+  </div>
+
+  {/* Modos */}
+  <div className="style-card" style={{ background: 'rgba(15, 23, 42, 0.5)', border: '1px solid var(--cm-rosa-ajolote)', padding: '1.5rem', borderRadius: '4px' }}>
+    <div className="card-header" style={{ borderBottom: '1px solid rgba(255, 42, 109, 0.2)', paddingBottom: '1rem', marginBottom: '1rem' }}>
+      <h3 style={{ margin: 0, color: 'var(--cm-rosa-ajolote)', fontFamily: 'var(--cm-font-mono)' }}>>_ MODOS DE COMPILACIÓN</h3>
+    </div>
+    <div className="card-body">
+      <p style={{ lineHeight: 1.6 }}>Las ramificaciones inalterables del ecosistema visual: O dominas el brutal `8-bits Pixel` Gamificado o te deslizas sobre el frío Navs `Neón` Moderno Vectorial.</p>
+      <a href="./modo-a" className="button button--primary button--outline button--sm" style={{borderColor: 'var(--cm-rosa-ajolote)', color: 'var(--cm-rosa-ajolote)'}}>Compilar Modos (Mod A/B)</a>
+    </div>
+  </div>
+
+</div>
+

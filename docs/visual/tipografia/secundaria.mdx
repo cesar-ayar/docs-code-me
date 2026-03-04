@@ -1,0 +1,64 @@
+---
+id: "tipografia-secundaria"
+hide_title: false
+hide_table_of_contents: true
+sidebar_position: 2
+sidebar_label: "Tipografía Secundaria"
+---
+
+import TerminalText from '@site/src/components/TerminalText';
+import FontShowcase from '@site/src/components/FontShowcase';
+
+# FUENTE SECUNDARIA (`<P>`)
+
+<TerminalText 
+    text=">_ TYPOGRAPHY_ENGINE: LOAD (MONTSERRAT_NATIVE)" 
+    color="blue" 
+    speed={60} 
+/>
+
+<p className="lead-text">
+  **La Voz Humana**. La tipografía nativa con curvas geométricas diseñada para que los humanos reales (padres de familia corporativos y alumnos leyendo código) **nos entiendan ágilmente** sin forzar la vista en pantallas saturadas.
+</p>
+
+---
+
+### 💬 Familia Elegida: Montserrat
+[Montserrat](https://fonts.google.com/specimen/Montserrat) es nuestra navaja suiza de la legibilidad. Es una fuente sin patines (_sans-serif_) tremendamente moderna, pulcramente geométrica pero amable a la vista. 
+Su rol supremo en el canvas gráfico es **traducir y rebajar** la arrolladora intensidad visual bruta de nuestras otras dos tipografías (La brutalista _Saira_ y la robótica _JetBrains_), permitiendo a los usuarios consumir párrafos largos, explicaciones complejas y legales corporativos sin agotarse en fracciones de segundo.
+
+<div style={{margin: '2rem 0'}}>
+    <FontShowcase 
+        fontFamily="'Montserrat', sans-serif" 
+        defaultText={"if (idea) { return bitxo.build(); }"} 
+        allowedWeights={[400, 600, 700]} 
+    />
+</div>
+
+### 🛠️ Configuración (Specs)
+- **Pesos Aprobados (`font-weight`):** `SemiBold (600)` para hacer resaltar los links, negrillas de énfasis (`<b>`) y subtítulos ligeros. O el balanceado `Regular (400)` estricto para cuerpos de texto.
+- **El Rol:** El balance. La claridad mental (UX) y la lectura sostenida.
+- **Tracking:** Relajado. Nunca debe ir apretada. Deja que las letras respiren a `0em` o `+0.01em` para maximizar la lectura horizontal en resoluciones móviles.
+
+### 📍 Puntos de Montaje Aprobados (Deploy)
+¿Dónde implementar este recurso textual?
+- Cuerpos de texto masivos (Body text, Documentación general y `Text-areas`).
+- Textos y _Footers_ Legales.
+- Documentos corporativos y PDF de alianzas estratégicas dirigidos a socios (Business to Business).
+
+### 💻 Implementación en Código
+
+```css
+/* Injecting Soft Typographic Scale */
+
+p, span, .body-text {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 400; /* Regular base */
+    line-height: 1.6; /* Aire vital entre lineas */
+    color: var(--cm-blanco-consola); /* Contraste Dark Mode */
+}
+
+b, strong {
+    font-weight: 600; /* Pop-out SemiBold */
+}
+```

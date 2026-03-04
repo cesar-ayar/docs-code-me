@@ -1,0 +1,14 @@
+{
+  "position": 5,
+  "label": "Inteligencia Artificial",
+  "key": "inteligencia-artificial",
+  "collapsible": true,
+  "collapsed": true,
+    "link": {
+        "type": "doc",
+        "id": "inteligencia-artificial-index"
+    },
+  "customProps": {
+    "description": "Conoce recursos de ayuda para el uso de Inteligencia Artificial en Code Me."
+  }
+}

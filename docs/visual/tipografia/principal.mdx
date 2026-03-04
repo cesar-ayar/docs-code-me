@@ -1,0 +1,65 @@
+---
+id: "tipografia-principal"
+hide_title: false
+hide_table_of_contents: true
+sidebar_position: 1
+sidebar_label: "Tipografía Principal"
+---
+
+import TerminalText from '@site/src/components/TerminalText';
+import FontShowcase from '@site/src/components/FontShowcase';
+
+# FUENTE PRINCIPAL (`H1`)
+
+<TerminalText 
+    text=">_ TYPOGRAPHY_ENGINE: LOAD (SAIRA_EXTRA_EXPANDED)" 
+    color="blue" 
+    speed={60} 
+/>
+
+<p className="lead-text">
+  **La Voz de Mando Sistemático**. La tipografía que recibe el primer impacto visual en la arquitectura de <strong>CODE ME</strong>. 
+  Pura presencia brutalista e industrial que construye bloques inamovibles.
+</p>
+
+---
+
+### 🏗️ Familia Elegida: Saira (Extra Expanded)
+[Saira](https://fonts.google.com/specimen/Saira) es una portentosa tipografía sans-serif de Google Fonts que se caracteriza por su brutal capacidad y solvencia para impactar visualmente el espacio con pura gravedad. 
+Al usar **tácticamente** su versión _“Extra Expanded”_ (Estrecho extra ancho), logramos emular instantáneamente el _Vibe Retro-tech_ de aquellas pesadas matrices de pantallas antiguas. 
+Es una fuente 100% estructural; luce idéntica a los bloques físicos de un rascacielos digital pesado.
+
+<div style={{margin: '2rem 0'}}>
+    <FontShowcase 
+        fontFamily="Saira, sans-serif" 
+        defaultText={"if (idea) { bitxo.build(); }"} 
+        allowedWeights={[800, 900]} 
+    />
+</div>
+
+### 🛠️ Configuración (Specs)
+- **Pesos (`font-weight`):** Exclusivamente los más aplastantes. `Black (900)` o `ExtraBold (800)`.
+- **Ancho (`font-stretch`):** Literalmente imperativo configurarlo a `extra-expanded` (o elegir la familia Saira Extra Condensed en su defecto si tu software no procesa font-stretch variable).
+- **El Rol:** Actúa psicológicamente como _El Muro de Contención_. 
+- **Tracking:** Generalmente un poco más apretado (Tight `letter-spacing: -2%`) para amarrar las letras unas dándose soporte contra otras como un puro bloque en vez de palabras separadas flotando solas.
+
+### 📍 Puntos de Montaje Aprobados (Deploy)
+- Uso dictatorial y sin excepciones para **Títulos y Encabezados Mayores (`H1`)**.
+- **Regla Estricta del Backend:** El `H1` Saira SIEMPRE se imprime en letras `MAYÚSCULAS` Sostenidas. Nunca capitalizadas ("Abc") o minúsculas. 
+- La fuente principal para cualquier texto pesado sobre playeras o Merchandising.
+- En macro-pantallas corporativas o diapositivas donde necesitemos que una sola frase acapare todo el canvas.
+
+### 💻 Implementación en Código
+
+```css
+/* Injecting Root Typographic Scale */
+
+h1, .saira-heavy-title {
+    font-family: 'Saira', sans-serif; 
+    font-weight: 900;
+    font-stretch: extra-expanded; 
+    text-transform: uppercase;
+    letter-spacing: -0.02em; /* Pegando los caracteres de sistema */
+    line-height: 1.1; /* Rompiendo el interlineado flojo */
+}
+```

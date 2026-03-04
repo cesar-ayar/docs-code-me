@@ -1,0 +1,62 @@
+---
+id: "tipografia-codigos"
+hide_title: false
+hide_table_of_contents: true
+sidebar_position: 3
+sidebar_label: "Tipografía de Código"
+---
+
+import TerminalText from '@site/src/components/TerminalText';
+import FontShowcase from '@site/src/components/FontShowcase';
+
+# FUENTE DE COMANDOS (MONO)
+
+<TerminalText 
+    text=">_ LOAD: DEV_FONT (JETBRAINS_MONO)" 
+    color="green" 
+    speed={60} 
+/>
+
+<p className="lead-text">
+  **El Código Fuente.** Es nuestra esencia _cruda_ destilada en texto. La sintaxis del entorno `IDE`. 
+  Su ritmo espaciado idéntico crea el contraste violento perfecto contra la brutal masa asimétrica negra de Saira.
+</p>
+
+---
+
+### 💻 Familia Elegida: JetBrains Mono
+[JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) es venerada religiosamente mundialmente como la _Fuente Nativa de los Desarrolladores_. Dejamos atrás las odiadas _Courier_ viejas para abrazar esta bestia técnica con hermosas ligaduras de programación incluidas (crea operadores fluidos tipo `=>`, `!=`, `===`).
+
+Al forzar todas sus letras y símbolos a medir idénticamente lo mismo (mono-espaciado), otorga visualmente a la marca la inmediata autoridad "Técnica / Hacker" de un editor avanzado. Representa fielmente a nuestra mascota Bitxo procesando todo crudo.
+
+<div style={{margin: '2rem 0'}}>
+    <FontShowcase 
+        fontFamily="'JetBrains Mono', monospace" 
+        defaultText={"if (idea) { bitxo.build(); }"} 
+        allowedWeights={[400, 700]} 
+    />
+</div>
+
+### 🛠️ Configuración (Specs)
+- **Pesos Aprobados (`font-weight`):** Exclusivos cortes extremos (`Bold (700)` para llamados y Subtítulos visuales, y el esbelto `Regular (400)` para puras líneas de código funcionales en pantalla de IDE).
+- **El Rol:** El Hardware puro. La lógica abstracta del Servidor asomándose.
+- **Espaciado Inteligente:** Al ser Monoespaciada, déjala siempre tranquila (`letter-spacing: normal`). No rompas su matemática intentando unir o separar las letras.
+
+### 📍 Puntos de Montaje Aprobados (Deploy)
+- **Bloques Visuales Selectivos:** Componentes de Código crudos Snippets simulados o reales. Subtítulos lúdicos (`H2`, `H3`) si queremos darles feeling de "Comandos de Archivos"
+- **Acciones y Navegación:** CTAs o Botoneras duras en un Navbar minimalista que clamen `[ EJECUTAR ]`.
+- Decoración Cruda: Todo el "Ruido Sintáctico Ambiental" de la marca: (>_, //, [ ]).
+
+### 💻 Implementación en Código
+
+```css
+/* Injecting Hacker Monospace System */
+
+pre, code, .terminal-prompt, .cta-button {
+    font-family: 'JetBrains Mono', monospace; 
+    font-weight: 700; /* Bold for UI pop */
+    font-variant-ligatures: contextual; /* Activando ligaduras pro de Devs */
+    background-color: transparent; /* Si se usa sobre Obsidiana */
+    color: var(--cm-cyan-electrico); /* Brillos o Acentos técnicos */
+}
+```

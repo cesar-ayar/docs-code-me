@@ -1,0 +1,14 @@
+{
+  "position": 7,
+  "label": "Texturas",
+  "key": "texturas",
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "texturas-index"
+  },
+  "customProps": {
+    "description": "Conoce los usos de las texturas de Code Me."
+  }
+}

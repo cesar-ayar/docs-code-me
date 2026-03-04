@@ -1,0 +1,14 @@
+{
+  "position": 6,
+  "label": "Patrones",
+  "key": "patrones",
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "patrones-index"
+  },
+  "customProps": {
+    "description": "Conoce los usos de los patrones de Code Me."
+  }
+}

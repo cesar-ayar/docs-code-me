@@ -1,0 +1,51 @@
+---
+id: "tipografia-lineamientos"
+hide_title: false
+hide_table_of_contents: true
+sidebar_position: 4
+sidebar_label: "Lineamientos UX (Grid)"
+---
+
+import TerminalText from '@site/src/components/TerminalText';
+
+# LINEAMIENTOS Y REGLAS UX 
+
+<TerminalText 
+    text=">_ RUN: TYPOGRAPHY_LINTER.SH" 
+    color="blue" 
+    speed={60} 
+/>
+
+<p className="lead-text">
+  **El Sistema de Red de Textos.** La tipografía en Code-Me jamás de los jamases debe verse descuidada. Debe evocar obligatoriamente precisión quirúrgica, claridad lógica extrema y profunda estructura de datos. Buscamos a toda costa equilibrar delicadamente la ruda estética técnica de una terminal vieja con la fluida legibilidad visual de una moderna interfaz de usuario de Sillicon Valley.
+</p>
+
+---
+
+### 📏 Reglas del Sistema (Jerarquía)
+
+Para lograr mantener la robusta consistencia visual de la marca rebotando entre plataformas distintas (Instagram, Diapositivas en vivo e Impresos gigantes), deberán seguirse forzosamente estas estrictas directrices formales:
+
+#### A. Espíritu de Consola (`Mono Character`)
+- **Regla Estricta:** La gran mayoría de los Títulos Técnicos de apoyo (`H2`, `H3`) y elementos duros de UI deben exudar código. El programador (nuestra `JetBrains Mono` nativa de IDE) o similares monolíticas como Fira Code. Esta familia domina brutalmente Menús de Navegación, Footers Crudos y Estadísticas numéricas.
+- **Fallo Tolerado:** Si por razones de compatibilidad del sistema receptor no puede correr la familia pesada o la JetBrains, por regla se fuerza un _fallback_ a cualquier Monoespaciada nativa dura del Sistema Operativo (`Courier New HD`, `Consolas`). Pero nunca a fuentes redondeadas (Tipo _Comic_ o _Papyrus_) a menos que sea un meme a propósito.
+
+#### B. Legibilidad en Pantallas (El Balance `p`)
+- **Regla Estricta:** Para los pesados bloques documentales masivos (Decenas de líneas consecutivas para padres de familia), JAMÁS uses una fuente monoespaciada para el _Body Text_. Agotarás la retina y paciencia del padre usuario. Obligado está usar tu cálida humana **Montserrat** (o equivalente geométrica libre).
+- **Control Fino:** El crucial interlineado (`line-height`) flotando para bloques densos nunca puede declararse inferior mecánicamente a **`1.6em`** para Dark Mode. Esto obedece ciegamente a estrictas reglas de "Leyes UX de Salud Visual en modo noche", evitándonos ese horrendo _apelmazamiento cegador_ de píxeles pesados blancos ardiendo sobre pixeles negros masivos.
+
+#### C. Uppercase & Tracking (Botones de Comandos)
+- **Regla:** Queda prohibido el tratamiento pasivo "Click aquí" en los Botones `[ CTAS / Enlaces directos ]`. Los Botones deben simular en mayúscula sostenida **(UPPERCASE)** ser rudos comandos del DOS para el cursor, abriendo ligeramente en `CSS` el aire dentro de sus letras (`letter-spacing: +0.05em a +0.1em`). 
+
+---
+
+### 🛑 Anti-Patrones de Compilación (Warning_Flags)
+
+1. **NO MEZCLAR `> 2` TIPOGRAFÍAS (`var overload = false`)** 
+   - Está penado por diseño cargar más de DOS familias diferentes de letras sobre el mismo frame/cuadro de vista. Saira masiva y Montserrat limpia para humanos. O JetBrains robótica y Saira si requieres un marco super _Hacker_ técnico. Jamás las 3 al mismo tiempo compitiendo en jerarquía; eso es ruido de aficionado y debilita dolorosamente tu layout gráfico en milisegundos.
+
+2. **CERO USOS DE FUENTES SERIFS (`!important`)**
+   - Literalmente proscrito a fuego el uso visual de tipografías antiguas con _patines o adornos_ clásicos (Las _Times New Roman_, las _Garamond_) incluso si un texto nos lo roga en "citas formales escolares". Rompen estrepitosamente la atmósfera de inmersión Cyberpunk Tecnológica brutal que hemos creado cuadro a cuadro. Aquí nada es época de la imprenta vieja; todo es vectores digitales y Neón.
+
+3. **CERO ITÁLICAS INNECESARIAS (Falsos énfasis)**
+   - La cursiva clásica (`<i>` / `font-style: italic`) ha quedado extinta conceptualmente como medio real para dar protagonismo de lectura general. Aquí los programas no usan cursiva de máquina de escribir inclinada; aquí usamos destellos puros. Si en tu párrafo necesitas realzar fuertemente una idea, no la tuerzas: **la inyectas furiosamente de Semi-Bold (#FF2A6D - Rosa Matrix)** o encierras el texto lúdicamente entre puras marcas de comentarios del IDE estilo `/* Highlight System */` para forzar la sonrisa del que sabe de lenguaje técnico.

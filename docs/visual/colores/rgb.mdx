@@ -1,0 +1,131 @@
+---
+id: "rgb"
+hide_title: false
+hide_table_of_contents: true
+sidebar_position: 1
+sidebar_label: "Colores (RGB)"
+---
+
+import { ColorCard, ColorPalette } from "@site/src/components/ColorPalette";
+import TerminalText from "@site/src/components/TerminalText";
+
+# PALETA PRINCIPAL (RGB MODE)
+
+<TerminalText 
+    text=">_ RENDER_ENGINE: INITIALIZING_HEX_HUES" 
+    color="pink" 
+    speed={60} 
+/>
+
+<p className="lead-text">
+  **Modo de Pantalla Nativo.** Nuestro sistema cromático base está construido con píxeles RGB iluminados, nunca con tintas opacas. 
+  Aquí se definen las variables absolutas de color que dominan la UI brillante de <strong>CODE ME</strong>.
+</p>
+
+---
+
+:::warning ⚠️ EXCEPCIÓN AL MODO OSCURO (ECO-FRIENDLY)
+Nuestros colores estrella neón (`Rosa Ajolote`, `Cyan Eléctrico`, `Verde Terminal`) son colores **luz puros (RGB)** súper luminosos. Están garantizados a morir y asfixiarse visualmente si los imprimes directo en impresoras austeras tradicionales.
+- **Ecofriendly Hack (`Ink_Saver_Mode = true`):** Para imprimir manuales escolares, exámenes físicos, fichas y documentos académicos largos, **INVIERTE LA POLARIDAD VISUAL** sin dudarlo. 
+- Fija el Fondo de la hoja llanamente en **Blanco** (`#FFFFFF`), lanza el Body Text a **Negro Puro** (`#000000`) y usa nuestras potentes variables de color Neón exclusivamente en pequeños acentos matemáticos (títulos, vectores o alertas) emulando exactamente la fría y calculada estética de un *Plano Arquitectónico (Blueprint)* físico impreso.
+:::
+
+## 🧪 Base del Sistema de Color (`Theme Consts`)
+Nuestra Matrix se dibuja sobre estos cinco valores Hexadecimales:
+
+<ColorPalette columns={3}>
+  <ColorCard name="Obsidiana Digital" color="#0F172A" opacity={1} variant="default" />
+  <ColorCard name="Rosa Ajolote" color="#FF2A6D" opacity={0.8} variant="default" />
+  <ColorCard name="Verde Terminal" color="#05FF00" opacity={0.9} variant="default" />
+  <ColorCard name="Cyan Eléctrico" color="#00F0FF" opacity={0.9} variant="default" />
+  <ColorCard name="Blanco Consola" color="#F8FAFC" opacity={0.9} variant="default" />
+</ColorPalette>
+
+
+### 1. Obsidiana Digital (Background)
+
+<div style={{maxWidth: '350px'}}>
+  <ColorCard name="Obsidiana Digital" color="#0F172A" opacity={1} variant="hover" />
+</div>
+
+<p>
+  Proscrito está el uso de fondos planos negros puros (`#000000`) ruidosos de Paint 90s. Nuestro Dark Mode general 
+  exige un azul profundísimo y sumamente elegante inspirado simultáneamente en la enigmática piedra volcánica mexicana y el frío fondo vacío de un editor de <code>VS Code</code> recién abierto a las 3 AM. Representa la profundidad bruta del lienzo digital infinito y la serenidad profesional sobre la cual montamos el neón.
+</p>
+
+- **Variable CSS:** `var(--cm-obsidiana)`
+- **Uso Estricto:** Canvas base de las páginas Web enteras y fondos predominantes limpios de interfaces oscuras o Presentaciones magistrales (`Base-layer`).
+
+---
+
+### 2. Rosa Ajolote (Primary Accent)
+
+<div style={{maxWidth: '350px'}}>
+  <ColorCard name="Rosa Ajolote" color="#FF2A6D" opacity={0.8} variant="hover" />
+</div>
+
+<p>
+  La gloriosa fusión perfecta, ruidosa y en esteroides químicos del clásico "Rosa Mexicano" nativo artesanal repotenciado agresivamente 
+  con intenso fósforo y neón del género Cyberpunk. Es el verdadero corazón latiendo a mil por hora de la marca. 
+  Inyecta al usuario pura estamina estética, rebeldía hacker y regeneración celular como la piel base de Bitxo. Escandaliza la vista si se abusa, así que dosifícalo.
+</p>
+
+- **Variable CSS:** `var(--cm-rosa-ajolote)`
+- **Uso Estricto:** Fuego intenso. Uso limitado a formidables Botones de compra o registro hiper urgentes (`CTAs` estelares), alertas graves de sistema o bloques estéticos que necesitemos tatuar en la mente del padre de familia.
+
+---
+
+### 3. Verde Terminal (Success Matrix)
+
+<div style={{maxWidth: '350px'}}>
+  <ColorCard name="Verde Terminal" color="#05FF00" opacity={0.9} variant="hover" />
+</div>
+
+<p>
+  Sangre directa de "La Matrix". El nostálgico verde radioactivo fluorescente clásico inconfundible 
+  de los bulbos en los monitores de texto viejos crudos de ingeniería pura en los sótanos. 
+  Es un disparo al instinto nerd básico y por su significado general representa un script limpio corriendo asombrosamente.
+</p>
+
+- **Variable CSS:** `var(--cm-verde-terminal)`
+- **Uso Estricto:** Mensajes de confirmación limpios (`200 OK`), pop-ups triunfantes, barras de progreso llenas (`Loaders`), iconos brillantes de Checks de seguridad perfectos o hacks logrados. Crecimiento.
+
+---
+
+### 4. Cyan Eléctrico (Tech UI / Connect)
+
+<div style={{maxWidth: '350px'}}>
+  <ColorCard name="Cyan Eléctrico" color="#00F0FF" opacity={0.9} variant="hover" />
+</div>
+
+<p>
+  Frío. Eléctrico. Imperturbable. Es color natural de un rayo luminoso vectorizado recorriendo la densa red a velocidad de _fibra óptica_. 
+  Representa crudamente la fría conectividad internacional global en un click, la extrema lejanía sin emociones y el rostro lógico imparable de la computadora dominando la interface.
+</p>
+
+- **Variable CSS:** `var(--cm-cyan-electrico)`
+- **Uso Estricto:** Pura arquitectura UI técnica. Enlaces web crudos en texto (Hipervínculos flotando `#url`), delgados bordes emisivos de cajas de texto futuristas HUDs, flechas indicativas de lógicas complejas y los emblemáticos _Goggles luminosos AR_ tácticos de nuestro Tech Mentor, Bitxo.
+
+---
+
+### 5. Blanco Consola (Typography Base)
+
+<div style={{maxWidth: '350px'}}>
+  <ColorCard name="Blanco Consola" color="#F8FAFC" opacity={0.9} variant="hover" />
+</div>
+
+<p>
+  Romper la vista inyectando un masivo texto `#FFFFFF` puro destellando cegadoramente la Retina frente al negro Dark Mode brutal de media noche 
+  es un error de dolor de cabeza de _Frontend Juniors_. Para la lectura pacífica aplicamos un "Blanco roto inteligente". 
+  Cargado apenas imperceptiblemente hacia sutiles tonos gris-azulados, garantizando un confort visual quirúrgico absoluto mientras el alumno deborar enormes bloques densos documentales de código leyendo horas seguidas sin fatigarse.
+</p>
+
+- **Variable CSS:** `var(--cm-blanco-consola)`
+- **Uso Estricto:** Todo texto legible regular. Enormes hilos de párrafos educativos largos, títulos base que no busquen llamar la atención y _strings_ de lectura general limpia (`color: var(...)`).
+
+<TerminalText 
+    text="_ SYSTEM: PALETTE_RGB_COMPILED" 
+    color="green" 
+    speed={40} 
+    delay={1200}
+/>

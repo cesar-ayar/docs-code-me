@@ -1,0 +1,14 @@
+{
+  "position": 3,
+  "label": "Tipografía",
+  "key": "tipografia",
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "tipografia-index"
+  },
+  "customProps": {
+    "description": "Conoce los usos de la tipografía de Code Me."
+  }
+}

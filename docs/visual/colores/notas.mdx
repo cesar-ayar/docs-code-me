@@ -1,0 +1,49 @@
+---
+id: "notas"
+hide_title: false
+hide_table_of_contents: true
+sidebar_position: 5
+sidebar_label: "Notas de Debugging"
+---
+
+import ColorCard from '@site/src/components/ColorCard';
+import ColorPalette from '@site/src/components/ColorPalette';
+import TerminalText from "@site/src/components/TerminalText";
+
+# NOTAS IMPORTANTES (TIPS)
+
+<TerminalText 
+    text=">_ VISUAL_DEBUGGING // SYSTEM_TIPS" 
+    color="green" 
+    speed={60} 
+/>
+
+---
+
+### ¿Por qué diablos mis colores tienen dos códigos HEX distintos?
+
+Es tu culpa en absoluto. Es una fantástica pregunta que se hacen todos los alumnos de primeros ciclos. La respuesta lógica técnica está en la infinita brecha universal que existe entre emitir **Luz (`RGB`)** y plasmar **Tintas Químicas (`CMYK`)**.
+
+#### 1. El Runtime Mode Físico (Tintas CMYK)
+- **Concepto:** Todos los clásicos colores que pides que se impriman en un enorme vinil automotriz o en el libro oficial de la escuela (como nuestra versión `#E6007E`) son inherentemente **reflectores muertos de luz**.
+- **La Física:** Son tintas orgánicas sucias y apagadas forzosamente por pura química natural, porque la tinta cruda _absorbe luz muerta_ en lugar de re-emitirla al ojo humano.
+- **Funcionamiento Matemático:** Trabajan burdamente restándole puros niveles de luminosidad al pobre papel encapado blanco maestro. (Cian + Magenta + Amarillo + el temido Key Plate Negro).
+
+#### 2. El Runtime Mode Pantalla (Pantallas RGB)
+- **Concepto:** Por el contrario total; los impresionantes y ciegos colores fosforescentes que amas ver en tu monitor retina display nuevo (como nuestro `#FF2A6D`) son descarados **emisores violentos de luz fotónica**.
+- **La Física:** Son vibrantes al máximo, quemantes, brillantes y literalmente "Electric". Exudan radiación. No hay tinta, son diodos de led quemados.
+- **Funcionamiento Matemático:** Funcionan lógicamente _sumando frecuencias puras_ de fotones calientes (Vectores Rojo + Verde + Azul hasta llegar al blanco máximo de la ceguera).
+
+
+### 💡 TL;DR (Resumen de Producción)
+Nosotros siempre llamaremos en nuestro front-end al majestuoso **código primario de Luz (`RGB`)** para levantar la fantástica Matrix Web de `Code Me` y las pantallas táctiles. 
+
+Nos ahorcaremos y tendremos que usar dócilmente el terrible **código secundario opaco (`CMYK`)** forzoso para intentar imprimir lonas espectaculares enormes en avenida, o simples playeras promocionales de algodón barato publicitario. 
+
+Si cometieras la locura de intentar mandar imprimir por necedad tu `#FF2A6D RGB puro` directamente y sin modificar variables en una impresora de inyección EPSON; la estúpida máquina al verse imposibilitada de lanzar diodos de luz, simplemente la ahogará en su limitado perfil de tinta, destruyendo nuestro Neón y entregándote deprimentemente el peor color rosado pastel ocre sucio y sin alma jamás antes visto en la historia universal. Por eso mismo exacto programamos el _"Parche Modesto de Valores CMYK"_, simulando manualmente la química estricta de compensación para emparejar colores oscuros.
+
+:::warning 🚨 FATAL ERROR: REGLA DE DOS AMBIENTES
+Si el gráfico vivirá nativamente atrapado en tu celular o pantalla OLED; usas **Luz (Paleta RGB 1)**. <br/>
+Si obligatoriamente existirá su soporte en el mundo de papel celulosa física; usas **Tinta (Paleta CMYK 2)**. <br/>
+Jamás crees archivos cruzándolas mutuamente, la consola lo registrará como error.
+:::

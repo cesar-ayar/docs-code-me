@@ -1,0 +1,78 @@
+---
+id: "escalabilidad-logotipo"
+hide_title: false
+hide_table_of_contents: true
+sidebar_position: 2
+sidebar_label: "Escalabilidad"
+---
+
+import TerminalText from '@site/src/components/TerminalText';
+import ScalabilityShowcase from '@site/src/components/ScalabilityShowcase';
+
+# ESCALA MÍNIMA (Responsiveness)
+
+<TerminalText 
+    text=">_ LOAD: CSS_MEDIA_QUERIES()" 
+    color="blue" 
+    speed={60} 
+/>
+
+<p className="lead-text">
+  **The Core Sandbox**. El ADN geométrico de <strong>CODE ME</strong> debe permanecer absolutamente intacto y agresivo visualmente en cualquier escala de bits compilada. Desde pesadas vallas publicitarias en carreteras OOH, hasta ridículamente minúsculos avatares en smartwatches; _la legibilidad brutalista de nuestro código es nuestro estándar innegociable_ de control de calidad `(QA)`.
+</p>
+
+---
+
+### 📏 Pruebas de Medidas (Límites de Quiebre UX)
+
+Existen escalas mínimas tolerables para imprimir y cargar los assets web antes de que colapsen ruidosamente sobre sí mismos (El efecto de la Mancha de Pixeles / _Blurry mess_). 
+
+Nunca escales el logo por debajo de estos anchos mínimos:
+
+<div className="grid-container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', margin: '2rem 0' }}>
+  <div className="style-card" style={{ background: 'rgba(15, 23, 42, 0.5)', border: '1px solid var(--cm-cyan-electrico)', padding: '1.5rem', borderRadius: '4px' }}>
+    <div className="card-header" style={{ borderBottom: '1px solid rgba(0, 240, 255, 0.2)', paddingBottom: '1rem', marginBottom: '1rem' }}>
+      <h3 style={{ margin: 0, color: 'var(--cm-cyan-electrico)', fontFamily: 'var(--cm-font-mono)' }}>>_ EN MODO DIGITAL (PX)</h3>
+    </div>
+    <div className="card-body">
+      <div className="spec-item" style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
+        <span className="spec-label" style={{ fontWeight: 'bold' }}>Logo Completo</span>
+        <span className="spec-value" style={{ color: 'var(--cm-rosa-ajolote)' }}>100px <small style={{ color: 'var(--cm-blanco-consola)', opacity: 0.6 }}>ancho min.</small></span>
+      </div>
+      <div className="spec-item" style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
+        <span className="spec-label" style={{ fontWeight: 'bold' }}>Isotipo Aislado</span>
+        <span className="spec-value" style={{ color: 'var(--cm-rosa-ajolote)' }}>32px <small style={{ color: 'var(--cm-blanco-consola)', opacity: 0.6 }}>ancho min.</small></span>
+      </div>
+      <div className="spec-item" style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <span className="spec-label" style={{ fontWeight: 'bold' }}>Barra Horizontal Extensa</span>
+        <span className="spec-value" style={{ color: 'var(--cm-rosa-ajolote)' }}>140px <small style={{ color: 'var(--cm-blanco-consola)', opacity: 0.6 }}>ancho min.</small></span>
+      </div>
+    </div>
+  </div>
+
+  <div className="style-card" style={{ background: 'rgba(15, 23, 42, 0.5)', border: '1px solid var(--cm-rosa-ajolote)', padding: '1.5rem', borderRadius: '4px' }}>
+    <div className="card-header" style={{ borderBottom: '1px solid rgba(255, 42, 109, 0.2)', paddingBottom: '1rem', marginBottom: '1rem' }}>
+      <h3 style={{ margin: 0, color: 'var(--cm-rosa-ajolote)', fontFamily: 'var(--cm-font-mono)' }}>>_ EN IMPRESIÓN (REAL)</h3>
+    </div>
+    <div className="card-body">
+      <div className="spec-item" style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
+        <span className="spec-label" style={{ fontWeight: 'bold' }}>Logo Completo</span>
+        <span className="spec-value" style={{ color: 'var(--cm-cyan-electrico)' }}>25mm <small style={{ color: 'var(--cm-blanco-consola)', opacity: 0.6 }}>ancho min.</small></span>
+      </div>
+      <div className="spec-item" style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
+        <span className="spec-label" style={{ fontWeight: 'bold' }}>Isotipo Aislado</span>
+        <span className="spec-value" style={{ color: 'var(--cm-cyan-electrico)' }}>10mm <small style={{ color: 'var(--cm-blanco-consola)', opacity: 0.6 }}>ancho min.</small></span>
+      </div>
+      <div className="spec-item" style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <span className="spec-label" style={{ fontWeight: 'bold' }}>Métrica de Densidad</span>
+        <span className="spec-value" style={{ color: 'var(--cm-cyan-electrico)' }}>300 DPI <small style={{ color: 'var(--cm-blanco-consola)', opacity: 0.6 }}>resolución min.</small></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+:::tip PRO TIP_ (DEV HIGHLIGHT)
+Para aplicaciones estrictas de tamaños micro UI, iconografías de aplicaciones móviles y avatares (como los icónicos y cuadrados `favicons`), **siempre purga visualmente el archivo central** e implementa en su lugar exclusivamente tu majestuoso **Isotipo Limpio (The Bracket Token `>_`)** eliminando sin pena su `Wordmark` "Code Me". Esto hiper garantiza masivamente tu veloz reconocimiento de marca en resoluciones pobres.
+:::
+
+<ScalabilityShowcase />

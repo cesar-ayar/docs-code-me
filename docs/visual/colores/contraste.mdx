@@ -1,0 +1,128 @@
+---
+id: "contraste"
+hide_title: false
+hide_table_of_contents: true
+sidebar_position: 3
+sidebar_label: "Leyes de Contraste"
+---
+
+import ContrastShowcase from "@site/src/components/ContrastShowcase";
+import HierarchyShowcase from "@site/src/components/HierarchyShowcase";
+import ForbiddenShowcase from "@site/src/components/ForbiddenShowcase";
+import ContrastChecker from "@site/src/components/ContrastChecker";
+import TerminalText from "@site/src/components/TerminalText";
+
+# REGLAS DE CONTRASTE Y LEGIBILIDAD
+
+<TerminalText 
+    text=">_ RUNNING: WCAG_CONTRAST_TEST.JS" 
+    color="blue" 
+    speed={60} 
+/>
+
+<p className="lead-text">
+  **El Sistema de Colisión Visual**. Si mezclas mal nuestras variables cromáticas, no solo se ve horrendo; destruyes la experiencia de usuario (UX) 
+  creando fatiga óptica en milisegundos. El cumplimiento militar de esta matriz asegura una lectura inmersiva 
+  y estética sin *Bugs* visuales.
+</p>
+
+---
+
+### 🧮 Matriz de Combinaciones Permitidas (Whitelist)
+
+Esta tabla estricta define matemáticamente qué colores actúan como **Base** (Fondo contenedor `bg`) y cuáles como **Overlays** (`Elementos de primer plano/texturas`).
+
+| Capa_Cero (Fondo) | Capa_Uno (Texto / Icono) | Resultado de Compilación Recomendado |
+| :--- | :--- | :--- |
+| **Obsidiana Digital** (`#0F172A`) | Blanco, Cyan Eléctrico, Rosa | **Combinación Supreme.** El _Setup_ definitivo Dark Mode. |
+| **Rosa Ajolote** (`#FF2A6D`) | Obsidiana Digital, Blanco | Botones de Urgencia Crítica (`CTA`) de brutal impacto. |
+| **Cyan Eléctrico** (`#00F0FF`) | Obsidiana Digital | Etiquetas pequeñas, estados `hover` o sub-menús nav. |
+| **Verde Terminal** (`#05FF00`) | Obsidiana Digital | Indicadores limpios de éxito macizo o Highlight blocks. |
+| **Blanco Consola** (`#F8FAFC`) | Obsidiana Digital, Rosa | **Exclusivamente para imprenta** (Modo _Ink Saver_). |
+
+### 🎛️ Showcase Interactivo de Matrices
+La consola te permite explorar _On the fly_ cómo compilan dinámicamente nuestros colores base entre sí (En RGB puro y CMYK plano). Usa el selector interactivo.
+
+<ContrastShowcase />
+
+---
+
+### ⚖️ Jerarquía de Contraste (Estándar WCAG)
+
+Para no sangrar la retina ocular de nuestros usuarios al leer bloques documentales:
+
+1. **Lectura Óptima Total:** **Blanco Consola** directo sobre la masiva **Obsidiana Digital**. Es la relación estricta rey superior a `15:1` de contraste.
+2. **Sistema de Destacados (Highlighting):** Variables ácidas como **Rosa Ajolote** y **Cyan Eléctrico** bailan sobre lienzos oscuros SÓLO para enfatizar microdatos: *Labels, Strings, H2 o Iconos mágicos*. Jamás para un párrafo largo humano.
+3. **Estado de Botones (CTAs):** Regla de la Sangre Negra: Si fundes un botón vivo (`Verde, Rosa, Cyan`), la letra interna debe ser cruelmente **Obsidiana**. Nunca la pintes de blanco o explotará visualmente.
+
+<HierarchyShowcase />
+
+---
+
+### 🛑 Error Fetal: Combinaciones Prohibidas (`Syntax Errors`)
+
+Para sortear las horribles "Vibraciones Cromáticas" y el look pasivo novato, queda penalizado por sistema la inyección del siguiente código visual:
+
+1. **Rosa vibrante sobre Verde radiante:** Destrucción óptica total. Sus frecuencias casi chocan matando el enfoque humano (Efecto de Moiré Psicológico).
+2. **Cyan sobre Blanco:** Contraste matemáticamente muerto (`< 3:1`). El texto sufre lavado y simplemente desaparece en un mar de luz blanca inútil.
+3. **Texto Blanco sobre Background Verde Terminal:** Un crimen de accesibilidad. El verde brillante se come los pixeles blancos. **Tira Letras oscuras encima del Verde.**
+
+<ForbiddenShowcase />
+
+---
+
+## 💻 Aplicación de Inyección en Código Base (`UI`)
+
+### Las Variables de Ambiente CSS (CSS Vars)
+Toda la arquitectura del sistema front-end de `CODE ME` debe estar referenciada obligatoriamente a CSS Tokens. 
+Al inyectar paletas semánticamente logras velocidad inaligerable.
+
+```css
+/* ROOT: Declarando Variables de Entorno del Sistema */
+:root {
+  /* Lienzo */
+  --cm-obsidiana: #0F172A; 
+  --cm-blanco-consola: #F8FAFC; 
+  
+  /* El Fuel (Acentos) */
+  --cm-rosa-ajolote: #FF2A6D; 
+  --cm-cyan-electrico: #00F0FF; 
+  --cm-verde-terminal: #05FF00; 
+  
+  /* Estados UI Ocultos */
+  --cm-border: rgba(248, 250, 252, 0.15); /* Bordes UI transparentes */
+  --cm-selection: rgba(0, 240, 255, 0.3); /* Swipe mágico */
+}
+
+/* COMPONENT: Botón Primario de Fuego */
+.btn-core {
+  background-color: var(--cm-rosa-ajolote);
+  /* Regla de Contraste #3 aplicándose: Texto oscuro encima */
+  color: var(--cm-obsidiana); 
+  text-transform: uppercase;
+  font-family: 'JetBrains Mono', monospace; /* Tipo Comando */
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+/* COMPONENT: Hightlight de Código Activo */
+.code-highlight_success {
+  color: var(--cm-verde-terminal);
+  border-left: 2px solid var(--cm-verde-terminal);
+  padding-left: 1rem;
+}
+
+/* COMPONENT: Hackeando el ratón del usuario */
+::selection {
+  background: var(--cm-selection);
+  color: var(--cm-blanco-consola);
+}
+```
+
+---
+
+## 🛠️ Herramienta Embebida: Contrast Checker
+
+Nuestra máquina está conectada. Valídalo en vivo:
+
+<ContrastChecker />

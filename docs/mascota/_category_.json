@@ -1,0 +1,14 @@
+{
+  "position": 3,
+  "label": "Mascota",
+  "key": "mascota",
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "mascota-index"
+  },
+  "customProps": {
+    "description": "Conoce a nuestra mascota."
+  }
+}

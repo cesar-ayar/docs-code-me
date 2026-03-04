@@ -1,0 +1,14 @@
+{
+  "position": 5,
+  "label": "Ilustraciones",
+  "key": "ilustraciones",
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "ilustraciones-index"
+  },
+  "customProps": {
+    "description": "Conoce los usos de las ilustraciones de Code Me."
+  }
+}

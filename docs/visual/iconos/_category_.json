@@ -1,0 +1,14 @@
+{
+  "position": 4,
+  "label": "Iconos",
+  "key": "iconos",
+  "collapsible": true,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "iconos-index"
+  },
+  "customProps": {
+    "description": "Conoce los usos de los iconos."
+  }
+}

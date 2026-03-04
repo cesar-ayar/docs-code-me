@@ -1,0 +1,61 @@
+---
+id: "ilustraciones-index"
+title: "Sistema de Ilustraciones"
+sidebar_label: "Introducción"
+sidebar_position: 1
+hide_table_of_contents: true
+---
+
+import TerminalText from '@site/src/components/TerminalText';
+
+# ARQUITECTURA DE ILUSTRACIÓN
+
+<TerminalText 
+    text=">_ BOOTING: 3D_RENDER_ENGINE.EXE" 
+    color="pink" 
+    speed={60} 
+/>
+
+<p className="lead-text">
+  **The Matrix Render.** Nuestras ilustraciones no son simples "dibujos amigables" vectoriales planos en 2D. 
+  En **CODE ME** renderizamos universos de profunda carga tecnológica; desde el realismo volumétrico 3D crudo, hasta la lógica inamovible del bloque de *Voxel* en esteroides lúdicos, rematando con la altísima precisión de planos y *Blueprints*.
+</p>
+
+---
+
+<div className="grid-container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', margin: '2rem 0' }}>
+
+  {/* Modalidades */}
+  <div className="style-card" style={{ background: 'rgba(15, 23, 42, 0.5)', border: '1px solid var(--cm-rosa-ajolote)', padding: '1.5rem', borderRadius: '4px' }}>
+    <div className="card-header" style={{ borderBottom: '1px solid rgba(255, 42, 109, 0.2)', paddingBottom: '1rem', marginBottom: '1rem' }}>
+      <h3 style={{ margin: 0, color: 'var(--cm-rosa-ajolote)', fontFamily: 'var(--cm-font-mono)' }}>>_ ENGINE FLAGS (MODOS)</h3>
+    </div>
+    <div className="card-body">
+      <p style={{ lineHeight: 1.6 }}>_Mode_ 1: Hero 3D extremo para Marketing y Leads. _Mode_ 2: El denso ecosistema Voxel. _Mode_ 3: Blueprint para pesados manuales de ingeniería.</p>
+      <a href="./hero" className="button button--primary button--outline button--sm" style={{borderColor: 'var(--cm-rosa-ajolote)', color: 'var(--cm-rosa-ajolote)'}}>Compilar Modos Visuales</a>
+    </div>
+  </div>
+
+  {/* Recursos */}
+  <div className="style-card" style={{ background: 'rgba(15, 23, 42, 0.5)', border: '1px solid var(--cm-verde-terminal)', padding: '1.5rem', borderRadius: '4px' }}>
+    <div className="card-header" style={{ borderBottom: '1px solid rgba(5, 255, 0, 0.2)', paddingBottom: '1rem', marginBottom: '1rem' }}>
+      <h3 style={{ margin: 0, color: 'var(--cm-verde-terminal)', fontFamily: 'var(--cm-font-mono)' }}>>_ OPEN_SOURCE_ASSETS</h3>
+    </div>
+    <div className="card-body">
+      <p style={{ lineHeight: 1.6 }}>Cargas de librerías globales masivas (Saly 3D, Handz, Kenney Voxel) y los métodos estandarizados para apropiarnos de ellas lícitamente en UI.</p>
+      <a href="./recursos" className="button button--primary button--outline button--sm" style={{borderColor: 'var(--cm-verde-terminal)', color: 'var(--cm-verde-terminal)'}}>Abrir Banco de Assets</a>
+    </div>
+  </div>
+
+  {/* Post-procesado */}
+  <div className="style-card" style={{ background: 'rgba(15, 23, 42, 0.5)', border: '1px solid var(--cm-cyan-electrico)', padding: '1.5rem', borderRadius: '4px' }}>
+    <div className="card-header" style={{ borderBottom: '1px solid rgba(0, 240, 255, 0.2)', paddingBottom: '1rem', marginBottom: '1rem' }}>
+      <h3 style={{ margin: 0, color: 'var(--cm-cyan-electrico)', fontFamily: 'var(--cm-font-mono)' }}>>_ EL "CODE-ME_REMIX()"</h3>
+    </div>
+    <div className="card-body">
+      <p style={{ lineHeight: 1.6 }}>El algoritmo mágico de post-producción: Módulos de adición de brillos Neón, filtros fotográficos y RGB Split para homogenizar piezas gratuitas.</p>
+      <a href="./integracion" className="button button--primary button--outline button--sm" style={{borderColor: 'var(--cm-cyan-electrico)', color: 'var(--cm-cyan-electrico)'}}>Cargar Plugin de Remix</a>
+    </div>
+  </div>
+
+</div>

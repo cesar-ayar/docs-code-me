@@ -1,0 +1,51 @@
+---
+id: "generacion-ia-texturas"
+hide_title: false
+hide_table_of_contents: true
+sidebar_position: 4
+sidebar_label: "Generación con IA"
+---
+import ColorPalette from '@site/src/components/ColorPalette';
+import ColorCard from '@site/src/components/ColorCard';
+
+## Generación con Inteligencia Artificial
+
+Usa estos prompts para generar las bases de textura en alta resolución.
+
+### MONITOR CRT (Estilo RGB / Luz)
+
+Este prompt genera una textura lista para usar en modo "Overlay" sobre tus diseños digitales.
+
+```md
+Full frame abstract texture of a vintage CRT monitor screen close-up. Visible horizontal scanlines, RGB phosphor triad dots pattern. Dark aesthetic with subtle chromatic aberration (red/blue shift) on the edges. Digital noise, slight glow and bloom effect typical of 90s screens. The dominant tone is deep black/grey. No text, no recognizable objects, just the raw screen texture. High resolution, 8k. --tile
+```
+
+#### Configuración de Color
+
+    <ColorPalette columns={2}>
+        <ColorCard name="Obsidiana Digital" color="#0F172A" opacity={0.1} variant="hover" />
+        <ColorCard name="Cyan Eléctrico" color="#00F0FF" opacity={0.1} variant="hover" />
+    </ColorPalette>
+
+### PAPEL DE INGENIERÍA (Estilo CMYK / Tinta)
+
+Este prompt simula la textura física para fondos de documentos o posts "estilo impreso".
+
+```md
+Full frame macro texture of matte bond paper or architectural blueprint paper. Visible paper fiber grain, slight unevenness in the surface. The look is industrial, raw, and analog. On top of the paper, a very subtle layer of xerox toner noise (photocopy texture) in black ink. The paper color should be a very clean off-white (almost white). No watermarks, no text. Realistic lighting, soft shadows indicating paper texture. 8k resolution. --tile
+```
+
+#### Configuración de Color
+
+    <ColorPalette columns={2}>
+        <ColorCard name="Blanco Consola" color="#F8FAFC" opacity={0.1} variant="hover" />
+        <ColorCard name="Cyan Impreso" color="#00AEFF" opacity={0.1} variant="hover" />
+    </ColorPalette>
+
+### GLITCH ESTÁTICO (Caos Creativo)
+
+Para cuando necesitas una textura de fondo más agresiva.
+
+```md
+Abstract digital glitch texture background. Heavy static noise, data mosh effects, pixel sorting artifacts. A chaotic mix of vertical and horizontal signal interference lines. Colors are strictly confined to a palette of Deep Obsidian #0F172A, Neon Pink #FF2A6D, and Electric Cyan #00F0FF. Cyberpunk dystopia aesthetic, broken screen effect. High contrast, sharp edges. No text. 4k resolution.
+```

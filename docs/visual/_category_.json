@@ -1,0 +1,14 @@
+{
+  "position": 2,
+  "label": "Identidad Visual",
+  "key": "identidad-visual",
+  "collapsible": true,
+  "collapsed": true,
+    "link": {
+        "type": "doc",
+        "id": "identidad-visual-index"
+    },
+  "customProps": {
+    "description": "Conoce los activos visuales de Code Me."
+  }
+}

@@ -1,0 +1,101 @@
+---
+id: "patrones-generacion-ia"
+hide_title: false
+hide_table_of_contents: true
+sidebar_position: 5
+sidebar_label: "Generación con IA"
+---
+import TerminalText from '@site/src/components/TerminalText';
+
+## Generación con IA
+
+<TerminalText 
+    text=" >_ GENERATING_PATTERNS..." 
+    color="green" 
+    speed={80} 
+/>
+
+### Instrucciones de uso
+
+1. **Copia y pega** el bloque de texto completo en tu generador de imágenes por IA.
+2. Asegúrate de que tu generador soporte la relación de aspecto que necesitas (ej. `--ar 16:9` para presentaciones o `--ar 1:1` para posts de Instagram).
+3. Si el resultado es demasiado intenso, añade al final: `very subtle`, `low contrast`, `muted`.
+
+### Patrón A: The grid
+
+**Uso:** Fondos generales donde habrá texto encima. Debe ser casi invisible.
+**Paleta:** RGB (Digital Nativo).
+
+```md
+/imagine 
+prompt: Seamless background texture, ultra-minimalist technical blueprint style. 
+A precise geometric grid pattern made of ultra-thin, hairline lines (1px weight). 
+The grid should feel like a futuristic UI overlay, perfectly structured and repetitive. 
+The lines must be barely visible, with extremely low opacity (around 5% to 10%), 
+creating a subtle structural feel without distracting. Background Color: 
+Deep Obsidian Blue HEX #0F172A. Grid Line Color: Faint Electric Cyan HEX #00F0FF. 
+No other elements, just pure clean grid structure. 8k resolution, highly detailed texture for web background. --tile
+```
+
+### Patrón B: Lluvia de Sintaxis
+
+**Uso:** Portadas, banners y áreas de branding con poco texto. Nivel de ruido medio.
+**Paleta:** RGB (Digital Nativo).
+
+```md
+/imagine 
+prompt: Seamless background pattern, cyberpunk coding environment aesthetic. 
+The style is "Floating Syntax": scattered programming symbols and characters 
+floating in zero gravity without a specific direction. Elements must include 
+specific syntax markers: curly brackets `{ }`, closing tags `</>`, comment slashes `//`, 
+semicolons `;`, square brackets `[ ]`, underscores `_`, and inequality operators `!=`. 
+The font style must resemble a technical monospaced font like JetBrains Mono, bold and angular. 
+The symbols vary slightly in size and rotation but remain sparse. Opacity is low-to-medium (around 15% to 20%), 
+creating ambient visual noise. Colors: Glowing Neon Pink HEX #FF2A6D and Electric Cyan HEX #00F0FF against 
+a deep Obsidian background HEX #0F172A. No recognizable words, just abstract code symbols. 4k resolution. --tile
+```
+
+### Patrón C: Textil Digital (Pixel Weave)
+
+Este patrón cuenta con dos versiones debido a la finalidad del patrón, este podrá ser usado con la paleta de colores RGB (Digital Nativo) o CMYK (Impresión).
+
+**Uso:** Merch, separadores, reverso de tarjetas. Nivel de ruido alto.
+
+#### Versión 1.0: Digital (RGB)
+
+**Paleta:** RGB (Digital Nativo).
+
+```md
+/imagine 
+prompt: Seamless textile pattern design, "Mexa-Future Glitch" style. 
+A reinterpretation of traditional Mexican Zapotec and Otomi geometric 
+greca patterns (stepped frets, repetitive geometric motifs), but constructed 
+entirely out of 8-bit pixels, voxel blocks, and digital glitch artifacts. 
+It should look like a corrupted digital tapestry or a low-resolution video 
+game texture from the 90s. High contrast and vibrant. Colors (RGB Neon): 
+Intense glowing Neon Pink HEX #FF2A6D, Electric Cyan HEX #00F0FF, 
+and Lime Green HEX #05FF00 against a solid Deep Obsidian background 
+HEX #0F172A. The pattern should be dense, repetitive, and tileable, 
+suitable for fabric printing. 8k resolution, detailed pixel texture. --tile
+```
+
+#### Versión 2.0: Impresión (CMYK)
+
+**Paleta:** CMYK (Impresión).
+
+Esta versión usa los códigos HEX de "simulación de tinta" que definimos en el Brandbook. La IA generará una imagen con colores más apagados y realistas para impresión en papel/tela, evitando la falsa expectativa del neón.
+
+```md
+/imagine 
+prompt: Seamless textile pattern design for physical print, 
+"Mexa-Future" style adapted for ink on fabric. A reinterpretation 
+of traditional Mexican Zapotec geometric patterns constructed from 
+8-bit pixels and digital noise. The aesthetic is printed matter, 
+not digital screen glow. Colors must be muted to simulate CMYK 
+ink limits (Print Simulation HEX Codes): Deep Rich Black HEX #000000 
+as background. Pattern colors are Process Magenta HEX #E6007E, 
+Process Cyan HEX #00AEEF, and Acid Green HEX #80C342. The colors 
+should look like pigment on matte paper, without fluorescent glow or 
+bloom effects. Dense, repetitive, tileable pattern. 
+High resolution for print. --tile
+```
