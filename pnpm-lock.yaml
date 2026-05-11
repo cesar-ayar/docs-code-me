@@ -29,9 +29,6 @@ importers:
       prism-react-renderer:
         specifier: ^2.3.0
         version: 2.4.1(react@19.2.4)
-      puppeteer-core:
-        specifier: ^24.37.5
-        version: 24.37.5
       react:
         specifier: ^19.0.0
         version: 19.2.4
@@ -41,9 +38,6 @@ importers:
       sonner:
         specifier: ^2.0.7
         version: 2.0.7(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      whatsapp-web.js:
-        specifier: ^1.34.6
-        version: 1.34.6
     devDependencies:
       '@docusaurus/module-type-aliases':
         specifier: 3.9.2
@@ -51,6 +45,12 @@ importers:
       '@docusaurus/types':
         specifier: 3.9.2
         version: 3.9.2(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      puppeteer-core:
+        specifier: ^24.37.5
+        version: 24.37.5
+      whatsapp-web.js:
+        specifier: ^1.34.6
+        version: 1.34.6
 
 packages:
 
