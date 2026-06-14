@@ -35,7 +35,7 @@ function HomepageHeader() {
               textTransform: 'uppercase',
               textDecoration: 'none'
             }}>
-            >_ INICIAR KERNEL
+            &gt;_ INICIAR KERNEL
           </Link>
         </div>
       </div>
@@ -52,7 +52,7 @@ export default function Home() {
       <HomepageHeader />
       <main style={{ backgroundColor: 'var(--cm-obsidiana)', padding: '4rem 0' }}>
         <div className="container" style={{ textAlign: 'center', maxWidth: '800px' }}>
-          <h2 style={{ color: 'var(--cm-cyan-electrico)', fontFamily: 'var(--cm-font-mono)' }}>>_ DOCUMENTACIÓN OFICIAL DE MARCA</h2>
+          <h2 style={{ color: 'var(--cm-cyan-electrico)', fontFamily: 'var(--cm-font-mono)' }}>&gt;_ DOCUMENTACIÓN OFICIAL DE MARCA</h2>
           <p style={{ color: '#94a3b8', fontSize: '1.2rem', lineHeight: '1.6', marginTop: '1rem' }}>
             Explora la arquitectura visual, el modelo cromático y las leyes de UI/UX de Code Me. Todo diseñado bajo el estricto concepto <i>"Development-First"</i> para las próximas generaciones de programadores.
           </p>
